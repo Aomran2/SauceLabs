@@ -1,0 +1,16 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="Suite" verbose="1" >
+    <test name="Regression" >
+        <classes>
+            <class name="LoginFunctionality" />
+            <class name="ProductsDisplay" />
+            <class name="ProductDetails" />
+            <class name="SortProductPriceByLowToHigh" />
+            <class name="SortProductPriceByHighToLow" />
+            <class name="ShoppingCart" />
+            <class name="UserLogout" />
+
+        </classes>
+    </test>
+</suite>
