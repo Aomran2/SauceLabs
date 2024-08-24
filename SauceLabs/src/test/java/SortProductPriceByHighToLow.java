@@ -43,7 +43,7 @@ public class SortProductPriceByHighToLow extends baseTests{
         List<Double> expectedPrices = new ArrayList<>(actualPrice);
         expectedPrices.sort(Collections.reverseOrder());
 
-        soft.assertEquals(actualPrice, expectedPrices, "Products are not sorted by price (low to high) correctly");
+        soft.assertEquals(actualPrice, expectedPrices, "Products are not sorted by price (High to low) correctly");
         soft.assertAll();
         Thread.sleep(5000);
     }
