@@ -5,7 +5,7 @@ import org.testng.annotations.Test;
 
 import java.util.List;
 
-public class ProductsDisplay extends baseTests{
+public class ProductsDisplay extends baseTests {
 
     public WebDriver login(String username, String password) {
         hook.username().sendKeys(username);
@@ -30,6 +30,8 @@ public class ProductsDisplay extends baseTests{
             if (product.isDisplayed()) {
                 allProductsDisplayed = true;
             } else System.out.println("Product is not displayed" + product.getText());
+
+            System.out.println(product.getText());
         }
 
         if (allProductsDisplayed) {

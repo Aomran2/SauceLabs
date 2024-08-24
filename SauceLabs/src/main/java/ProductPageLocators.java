@@ -1,8 +1,6 @@
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 
-import java.util.List;
 
 public class ProductPageLocators {
 
@@ -14,7 +12,7 @@ public class ProductPageLocators {
 
 
     public By productsDisplay() {
-        return By.xpath("//div[@data-test=\"inventory-item\"]");
+        return By.xpath(".//div[@data-test=\"inventory-item\"]");
     }
 
     public By inventoryItemName() {
